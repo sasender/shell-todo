@@ -2,7 +2,7 @@
 
 source components/common.sh
 
-DOMAIN="zs-devops-01.site"
+DOMAIN="sasender.xyz"
 
 OS_PREREQ
 
