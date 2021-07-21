@@ -7,7 +7,7 @@ Head() {
 
 Stat() {
   if [ "$1" -eq 0 ]; then
-    echo -e "\e[1;32m SUCCESS\e[0m"
+    echo -e "\e[1;35m SUCCESS\e[0m"
   else
     echo -e "\e[1;31m FAILURE\e[0m"
     echo -e "\n\e[1;33m You can refer log file fore more information, Log file Path = ${LOG}\e[0m"
@@ -28,6 +28,6 @@ ERROR() {
 
  DOWNLOAD_COMPONENT() {
   Head "Downloading ${COMPONENT} Component"
-  curl -s -L -o /tmp/${COMPONENT}.zip "https://github.com/shivarkzs/${COMPONENT}/archive/main.zip"
+  curl -s -L -o /tmp/${COMPONENT}.zip "https://github.com/sasender/${COMPONENT}/archive/main.zip"
   Stat $?
 }
